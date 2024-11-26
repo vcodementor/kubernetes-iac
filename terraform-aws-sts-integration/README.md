@@ -25,3 +25,10 @@ Run the following command to configure your AWS credentials:
 
 ```bash
 aws configure
+```
+
+### Step 2: Generate Temporary AWS Credentials via STS
+
+```bash
+aws sts assume-role --role-arn arn:aws:iam::123456789012:role/YourRoleName --role-session-name YourSessionName
+```
